@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autofac.Aop", "Autofac.Aop\Autofac.Aop.csproj", "{93548FFA-DCEA-49B6-AB01-0B38793E38C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autofac.Aop.Tests", "Autofac.Aop.Tests\Autofac.Aop.Tests.csproj", "{5B1E50E8-A8DD-4EF3-8DD1-D6B970A0B14B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Production|Any CPU = Production|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93548FFA-DCEA-49B6-AB01-0B38793E38C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93548FFA-DCEA-49B6-AB01-0B38793E38C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93548FFA-DCEA-49B6-AB01-0B38793E38C3}.Production|Any CPU.ActiveCfg = Production|Any CPU
+		{93548FFA-DCEA-49B6-AB01-0B38793E38C3}.Production|Any CPU.Build.0 = Production|Any CPU
+		{93548FFA-DCEA-49B6-AB01-0B38793E38C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93548FFA-DCEA-49B6-AB01-0B38793E38C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1E50E8-A8DD-4EF3-8DD1-D6B970A0B14B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1E50E8-A8DD-4EF3-8DD1-D6B970A0B14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1E50E8-A8DD-4EF3-8DD1-D6B970A0B14B}.Production|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1E50E8-A8DD-4EF3-8DD1-D6B970A0B14B}.Production|Any CPU.Build.0 = Release|Any CPU
+		{5B1E50E8-A8DD-4EF3-8DD1-D6B970A0B14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1E50E8-A8DD-4EF3-8DD1-D6B970A0B14B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
