@@ -55,6 +55,9 @@
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="Qualificator.Kernel">
+      <HintPath>..\packages\Qualificator.Kernel.0.1.0\lib\Qualificator.Kernel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -70,6 +73,7 @@
     <Compile Include="Aspects\IExperimental.cs" />
     <Compile Include="Aspects\AspectsTest.cs" />
     <Compile Include="Aspects\TestOnMethodBondedAspect.cs" />
+    <Compile Include="AutofacContainerWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,7 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

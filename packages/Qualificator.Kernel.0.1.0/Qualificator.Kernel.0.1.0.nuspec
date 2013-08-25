@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Qualificator.Kernel</id>
+    <version>0.1.0</version>
+    <title>Qualificator.Kernel</title>
+    <authors>Iliya Tryapitsin</authors>
+    <owners>Iliya Tryapitsin</owners>
+    <projectUrl>https://github.com/IliyaTryapitsin/Qualificator</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Tools for unit-testing</description>
+    <releaseNotes />
+    <copyright />
+    <language />
+  </metadata>
+</package>

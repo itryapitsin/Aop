@@ -1,24 +1,26 @@
 ﻿using System;
+using Autofac.Aop.Exceptions;
 using Autofac.Extras.DynamicProxy2;
 using NUnit.Framework;
+using Qualificator.Kernel;
 
 namespace Autofac.Aop.Tests.Aspects
 {
     [TestFixture]
-    public class AspectsTest : BaseTest<IExperimental>
+    public class AspectsTest : BaseTest<IExperimental, IContainer>
     {
-        [SetUp]
-        public override void TestInitialize()
+        public AspectsTest()
         {
-            base.TestInitialize();
+            ContainerWrapper = new AutofacContainerWrapper(RegisterTypes);
+        }
 
-            var builder = new ContainerBuilder();
-
+        private void RegisterTypes(ContainerBuilder builder)
+        {
             builder
                 .RegisterType<Experimental>()
                 .As<IExperimental>()
                 .EnableInterfaceInterceptors()
-                .InterceptedBy(typeof (MethodInterceptor));
+                .InterceptedBy(typeof(MethodInterceptor));
 
             builder
                 .RegisterType(typeof(Experimental))
@@ -26,10 +28,13 @@ namespace Autofac.Aop.Tests.Aspects
                 .InterceptedBy(typeof(MethodInterceptor));
 
             builder.Register(x => new MethodInterceptor());
+        }
 
-            var container = builder.Build();
-
-            TestObject = container.Resolve<IExperimental>();
+        [SetUp]
+        public void SetUp()
+        {
+            Container = ContainerWrapper.GetContainer();
+            TestObject = Container.Resolve<IExperimental>();
         }
 
         [Test]
